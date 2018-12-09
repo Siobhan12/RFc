@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    android:background="#C6CBEC"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="76dp"
+            android:layout_height="31dp"
+            android:layout_row="0"
+            android:layout_column="12"
+            android:layout_marginTop="40dp"
+            android:text="Nombre"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="67dp" />
+
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            />
+
+        <TextView
+            android:id="@+id/tvApellidoMaterno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apellido materno"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="176dp" />
+
+    <EditText
+        android:id="@+id/edtApellidomaterno"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Apellido Materno"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+        <TextView
+            android:id="@+id/tvApellidoPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Apellido paterno"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="124dp" />
+
+        <EditText
+            android:id="@+id/edtApellidoPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Apellido Paterno"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="145dp"
+            tools:layout_editor_absoluteY="114dp" />
+
+        <TextView
+            android:id="@+id/tvFechaNac"
+            android:layout_width="92dp"
+            android:layout_height="27dp"
+            android:inputType="date"
+            android:text="Fecha Nac."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="230dp" />
+
+    <EditText
+        android:id="@+id/edtFechaNac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="yyyy/MM/dd"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+        <TextView
+            android:id="@+id/tvHermonia"
+            android:layout_width="97dp"
+            android:layout_height="25dp"
+            android:text="Hemonimia:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/tvHermonimia"
+        android:layout_width="182dp"
+        android:layout_height="42dp"
+        android:layout_row="0"
+        android:layout_column="13"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+        <TextView
+            android:id="@+id/tvRFC"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:text="RFC"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="333dp" />
+
+    <EditText
+        android:id="@+id/edtRFC"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="321dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btngenerar"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:onClick="generarRFC"
+            android:text="generar RFC" />
+
+        <Button
+            android:id="@+id/btnlimpiar"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Limpiar campos"
+            android:onClick="Limpiar"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
